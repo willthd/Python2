@@ -14,6 +14,7 @@
   """
   
   # 방법 1
+  # stdin.readline()의 경우 개행문자까지 읽기 때문에 len()으로 구하면 +1됨
   from sys import stdin
   a = int(stdin.readline())
   for i range(a):
@@ -23,6 +24,16 @@
   # 방법 2
   # stdin.readline() 대신 input() 활용
   # 방법 1이 더 빠름
+  ```
+
+* 출력
+
+* ```python
+  # java에서 System.out.println()과 동일
+  print("adslkfjl")
+  
+  # java에서 System.out.print()와 동일
+  print("adslkfjl", end='')
   ```
 
 * map
