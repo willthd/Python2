@@ -56,8 +56,69 @@
 
   ```python
   # 리스트의 원소들 간의 합 출력
+  from functools import reduce
   
-  sum_value = reduce((lambda x,y : x+y), [x for x in range(1,101)]) print(sum_value)
+  sum = reduce((lambda x,y : x+y), [x for x in range(101)])
+  
+  # 결과
+  # 5050
   ```
 
+* sort
+
+* ```python
+  # 숫자는 오름차순, 문자는 알파벳순으로 정렬. 원본 정렬되어 변환
+  list.sort()
   
+  # sort된 list를 return. 원본 변환 x
+  sorted(list)
+  
+  # 원소들을 거꾸로 뒤집는 것 뿐. 원본 변환
+  list.reverse()
+  
+  # 원소들은 뒤집어 return 하지만, list()로 한 번감싸야 함. 원본 변환 x
+  reversed(list)
+  list[::-1]
+  ```
+
+* Indexing, 인덱싱
+
+* ```python
+  # arr[A:B:C]의 의미는, index A 부터 index B 까지 C의 간격으로 배열을 만듬
+  [0, 1, 2, 3, 4, 5, 10]
+  
+  a = "12345"
+  a[::-1]
+  
+  # 출력 결과
+  54321
+  ```
+
+* String, 문자열
+
+* ```python
+  # 아래 경우 모두 s 원본 변경 x. return 값만 변경
+  # 대문자 
+  s.upper()
+  
+  # 소문자
+  s.lower()
+  
+  # 앞 글자만 대문자
+  s.caplitalize()
+  ```
+
+* for문, 값과 index 함께 나타내기
+
+* ```python
+  arr = [2, 7, 10]
+  for idx, val in enumerate(arr):
+  	print(idx, val)
+  	
+  # 만약 enumerate에서 두 번째 인자를 줄 경우, idx는 두 번째 값(여기선 5)부터 시작
+  for idx, val in enumerate(arr, 5):
+  	print(idx, val)
+  ```
+
+* 
+
