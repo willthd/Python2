@@ -120,5 +120,15 @@
   	print(idx, val)
   ```
 
+* string에서 ==와 is의 차이
+
+* ```python
+  a = "pub"
+  b = ''.join(["p", "u", "b"])
+  
+  # a == b일 경우 True. 값을 비교
+  # s is b일 경우 False. 객체 자체를 비교
+  ```
+
 * 
 
