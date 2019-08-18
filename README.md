@@ -141,5 +141,25 @@
   # s is b일 경우 False. 객체 자체를 비교
   ```
 
+* for문, 반복문
+
+* ```python
+  # for문 내에서 index 변화 불가능
+  
+  '''
+  for i in range(10):
+  	if i == 3:
+  		i = 8
+  	print(i)
+  '''
+  	
+  i = 0
+  while i < 10:
+  	if i == 3:
+  		i = 8
+  	print(i)
+  	i += 1
+  ```
+
 * 
 
