@@ -1,4 +1,4 @@
-# Python2
+# Python_2
 
 * 입력 받기
 
@@ -160,6 +160,12 @@
       i += 1
   	print(i)
   	i += 1	# 꼭 추가
+  ```
+
+* format
+
+* ```python
+  print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   ```
 
 * 
