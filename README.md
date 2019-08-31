@@ -190,6 +190,10 @@ i = 0
   
   # 값의 index 찾기
   a.index(값)
+  
+  # list의 경우 비어있으면 if문에서 false로 사용
+  if not seq:
+  if seq:
   ```
 
 * 소수점
