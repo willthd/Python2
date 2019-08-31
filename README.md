@@ -168,5 +168,15 @@
   print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   ```
 
+* list
+
+* ```python
+  # 사이즈 1000인 리스트 선언
+  a = [0] * 1000
+  
+  # 값의 index 찾기
+  a.index(값)
+  ```
+
 * 
 
