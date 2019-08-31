@@ -90,8 +90,14 @@
   # 원소들은 뒤집어 return 하지만, list()로 한 번감싸야 함. 원본 변환 x
   reversed(list)
   list[::-1]
+  
+# 특정 기준으로 정렬 할 때 key 사용. sorted도 마찬가지
+  list.sort(key = lambda x: x[0])
+  
+  # 두 가지 기준으로 정렬 할 때, 앞의 것이 우선 기준. sorted도 마찬가지
+  list.sort(key = lambda x: (x[0], x[1]))
   ```
-
+  
 * Indexing, 인덱싱
 
 * ```python
@@ -144,6 +150,14 @@
 * for문, 반복문
 
 * ```python
+  for i in range(10, 7, -1):
+  	print(i)
+  	
+  # 출력 결과
+  # 10
+  # 9
+  # 8
+  
   # for문 내에서 index 변화 불가능
   
   '''
@@ -153,7 +167,7 @@
   	print(i)
   '''
   	
-  i = 0
+i = 0
   while i < 10:
   	if i == 3:
   		i = 8
@@ -161,7 +175,7 @@
   	print(i)
   	i += 1	# 꼭 추가
   ```
-
+  
 * format
 
 * ```python
@@ -178,5 +192,5 @@
   a.index(값)
   ```
 
-* 
+  
 
