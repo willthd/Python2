@@ -26,6 +26,8 @@
   # 방법 1이 더 빠름
   ```
 
+  
+
 * 출력
 
 * ```python
@@ -36,6 +38,8 @@
   print("adslkfjl", end='')
   ```
 
+  
+  
 * map
 
   list의 각 element에 함수를 적용시켜 결과를 반환
@@ -49,6 +53,8 @@
   # [1, 4, 9, 16, 25]
   ```
 
+  
+
 * filter
 
   list의 각 element에서 어떤 조건에 일치하는 값만 반환
@@ -60,6 +66,8 @@
   # 결과
   # [1, 3, 5]
   ```
+
+  
 
 * reduce
 
@@ -74,6 +82,8 @@
   # 결과
   # 5050
   ```
+
+  
 
 * sort
 
@@ -98,6 +108,8 @@
   list.sort(key = lambda x: (x[0], x[1]))
   ```
   
+  
+  
 * Indexing, 인덱싱
 
 * ```python
@@ -111,6 +123,8 @@
   54321
   ```
 
+  
+  
 * String, 문자열
 
 * ```python
@@ -125,6 +139,8 @@
   s.caplitalize()
   ```
 
+  
+  
 * for문, 값과 index 함께 나타내기
 
 * ```python
@@ -137,6 +153,8 @@
   	print(idx, val)
   ```
 
+  
+  
 * string에서 ==와 is의 차이
 
 * ```python
@@ -147,6 +165,8 @@
   # s is b일 경우 False. 객체 자체를 비교
   ```
 
+  
+  
 * for문, 반복문
 
 * ```python
@@ -176,11 +196,15 @@ i = 0
   	i += 1	# 꼭 추가
   ```
   
+  
+  
 * format
 
 * ```python
   print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   ```
+
+  
 
 * list
 
@@ -196,6 +220,8 @@ i = 0
   if seq:
   ```
 
+  
+
 * 소수점
 
   ```python
@@ -206,6 +232,8 @@ i = 0
   "%0.4f" % 3.42134234
   ```
 
+  
+
 * 몫, 나머지
 
   ```python
@@ -215,6 +243,8 @@ i = 0
   # 나머지만 구하기
   5%3
   ```
+
+
 
 * stack, queue, deque
 
@@ -250,9 +280,44 @@ i = 0
   dq = Deque(list_)
   ```
 
+
+
 * Dictionary
 
   Hash Table이랑 동일 개념
 
-  참고 : [http://pythonstudy.xyz/python/article/14-%EC%BB%AC%EB%A0%89%EC%85%98--Dictionary](http://pythonstudy.xyz/python/article/14-컬렉션--Dictionary)
+  ```python
+  # 1. Tuple List로부터 dict 생성
+  # key가 이름, val이 나이
+  persons = [('김기수', 30), ('홍대길', 35), ('강찬수', 25)]
+  mydict = dict(persons)
+   
+  age = mydict["홍대길"]
+  print(age)   # 35
+   
+  # 2. Key=Value 파라미터로부터 dict 생성
+  scores = dict(a=80, b=90, c=85)
+  print(scores['b'])  #90
+  
+  scores = {"철수": 90, "민수": 85, "영희": 80}
+  # 3. 수정
+  scores["민수"] = 88   # 수정
+  
+  # 4. 추가
+  scores["길동"] = 95   # 추가
+  
+  # 5. 삭제
+  del scores["영희"]
+  
+  # 출력 {'철수': 90, '길동': 95, '민수': 88}
+  print(scores)
+  
+  # 6. 읽기
+  v = scores["민수"]
+  
+  # 7. +a
+  keys = scores.keys()
+  vals = scores.values()
+  ```
 
+  참고 : [http://pythonstudy.xyz/python/article/14-%EC%BB%AC%EB%A0%89%EC%85%98--Dictionary](http://pythonstudy.xyz/python/article/14-컬렉션--Dictionary)
