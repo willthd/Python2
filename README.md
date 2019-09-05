@@ -318,12 +318,27 @@ i = 0
   # 6. 읽기
   v = scores["민수"]
   
-  # 7. +a
+  # 7. sort
+  # 파이썬의 사전은 key : value 쌍으로 값이 들어 있으며, 이를 정렬(sort)하면 기본으로 키(key)을 기준으로 올림 차순으로 정렬
+  fruits = { 'apple': 2, 'banana' : 1, 'melon' : 0, 'pear' : 2, 'plum' : 1}
+  sorted(fruits)
+  # 결과 : ['apple', 'banana', 'melon', 'pear', 'plum']
+  sorted(fruits.keys())
+  # 결과 : ['apple', 'banana', 'melon', 'pear', 'plum']
+  
+  # value 기준으로 key를 정리하고 싶으면
+  sorted(fruits, key=lambda x:fruits[x], reverse=True)
+  
+  # 8. +a
   keys = scores.keys()
   vals = scores.values()
   ```
 
-  참고 : [http://pythonstudy.xyz/python/article/14-%EC%BB%AC%EB%A0%89%EC%85%98--Dictionary](http://pythonstudy.xyz/python/article/14-컬렉션--Dictionary)
+  참고
+
+  [http://pythonstudy.xyz/python/article/14-%EC%BB%AC%EB%A0%89%EC%85%98--Dictionary](http://pythonstudy.xyz/python/article/14-컬렉션--Dictionary)
+
+  http://blog.naver.com/PostView.nhn?blogId=msyang59&logNo=220627524714
 
 * 두 값 변경(swap
 
