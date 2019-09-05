@@ -346,3 +346,16 @@ i = 0
 a, b = b, a
 ```
 
+* class
+
+```python
+class Calculator:
+    def __init__(self, val):
+        self.result = val
+
+# self는 parameter로 받지 않음
+a = Calculator(3)
+print(a.result)
+# 출력 : 3
+```
+
