@@ -106,10 +106,13 @@
   
   # 두 가지 기준으로 정렬 할 때, 앞의 것이 우선 기준. sorted도 마찬가지
   list.sort(key = lambda x: (x[0], x[1]))
+  
+  # 역순으로 배열
+  list.sort(key = lambda x: x[0], reverse=True)
   ```
-  
-  
-  
+
+
+
 * Indexing, 인덱싱
 
 * ```python
