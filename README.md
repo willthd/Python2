@@ -353,7 +353,7 @@ class Calculator:
     def __init__(self, val):
         self.result = val
 
-# self는 parameter로 받지 않음
+# self는 parameter로 받지 않음, val 없으면 self.result의 초기값만 정해주면 됨
 a = Calculator(3)
 print(a.result)
 # 출력 : 3
