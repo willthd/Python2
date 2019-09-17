@@ -221,6 +221,17 @@ i = 0
   # list의 경우 비어있으면 if문에서 false로 사용
   if not seq:
   if seq:
+    
+  # list 읽을 때 주의
+  # 1은 안됨
+  a = []
+  a[0] = 1
+  print(a[0])
+  
+  # 2는 됨
+  a = []
+  a.append(1)
+  print(a[0])
   ```
 
   
