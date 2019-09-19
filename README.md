@@ -219,6 +219,7 @@ i = 0
   a.index(값)
   
   # list의 경우 비어있으면 if문에서 false로 사용
+  # list.isempty()는 not list와 동일
   if not seq:
   if seq:
     
@@ -368,5 +369,17 @@ class Calculator:
 a = Calculator(3)
 print(a.result)
 # 출력 : 3
+```
+
+* 전역 변수
+
+```python
+a = 3
+
+# 함수 내에서 전역 변수 사용할 경우 global 사용
+def f1(dep):
+	global a
+	a = 5
+	return a
 ```
 
