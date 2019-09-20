@@ -383,3 +383,23 @@ def f1(dep):
 	return a
 ```
 
+* 정수 max, min
+
+```python
+import sys
+
+t1 = sys.maxint
+t2 = sys.maxint+1 #int범위를 넘으면 long으로 자동으로 형 변환
+
+print(t1)
+print(t2)
+print(type(t1))
+print(type(t2))
+
+# 출력
+# 9223372036854775807
+# 9223372036854775808
+# <type 'int'>
+# <type 'long'>
+```
+
