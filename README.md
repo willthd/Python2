@@ -388,8 +388,9 @@ def f1(dep):
 ```python
 import sys
 
-t1 = sys.maxint
-t2 = sys.maxint+1 #int범위를 넘으면 long으로 자동으로 형 변환
+t1 = sys.maxsize
+t2 = sys.maxsize+1 #이것도 type int. max값이 있지만 int 타입으로 더 커질 수 있기 때문에 큰 의미 없음
+t3 = -sys.maxsize-1 # 최소값(마찬가지로 더 작아질 수 있음)
 
 print(t1)
 print(t2)
@@ -400,6 +401,6 @@ print(type(t2))
 # 9223372036854775807
 # 9223372036854775808
 # <type 'int'>
-# <type 'long'>
+# <type 'int'>
 ```
 
