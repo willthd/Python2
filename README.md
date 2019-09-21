@@ -404,3 +404,18 @@ print(type(t2))
 # <type 'int'>
 ```
 
+* 최빈값 구하기
+
+```python
+from collections import Counter
+
+colors = ['red', 'blue', 'red', 'green', 'blue', 'blue']
+cnt = Counter(colors)
+# cnt 출력
+# Counter({'blue': 3, 'red': 2, 'green': 1})
+
+cnt.most_common()
+# 출력
+# (('blue', 3), ('red', 2), ('green', 1))
+```
+
