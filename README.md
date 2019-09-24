@@ -376,13 +376,27 @@ print(a.result)
 * 전역 변수
 
 ```python
+# 함수 내에서 전역 변수 사용할 경우 global 사용
 a = 3
 
-# 함수 내에서 전역 변수 사용할 경우 ddglobal 사용
-def f1(dep):
+def f1(a):
 	global a
 	a = 5
-	return a
+
+f1(a)
+print(a)
+# 5출력. global 안쓰면 3 출력
+
+
+# parameter가 object(str제외)일 때는 global 사용하지 않아도 값 변경 되더라?...
+
+a = [0, 1, 2]
+def f2(a):
+  a[0] = 10
+
+f2(a)
+print(a[0])
+# 10 출력
 ```
 
 * 정수 max, min
