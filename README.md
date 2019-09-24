@@ -378,7 +378,7 @@ print(a.result)
 ```python
 a = 3
 
-# 함수 내에서 전역 변수 사용할 경우 global 사용
+# 함수 내에서 전역 변수 사용할 경우 ddglobal 사용
 def f1(dep):
 	global a
 	a = 5
