@@ -289,7 +289,8 @@ i = 0
   
   
   # 큐, 덱을 이용함, 큐의 경우 앞으로 한칸 씩 값을 옮겨야 하기 때문에 시간 복잡도 O(n)되기 때문
-  from collections import deque # (*deque는 double ended queue의 약자입니다)
+  # (deque는 double ended queue의 약자)
+  from collections import deque
   queue = deque()
   queue.append(1)
   queue.append(2)
