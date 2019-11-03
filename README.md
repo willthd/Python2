@@ -196,24 +196,23 @@
   		i = 8
   	print(i)
   '''
-  	
+  
+  i = 0
+    while i < 10:
+    	if i == 3:
+    		i = 8
+        i += 1
+    	print(i)
+    	i += 1	# 꼭 추가
   ```
+  
+  
 
-i = 0
-  while i < 10:
-  	if i == 3:
-  		i = 8
-      i += 1
-  	print(i)
-  	i += 1	# 꼭 추가
-  ```
-  
-  
-  
 * format
 
-* ```python
-  print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
+  ```python
+# format
+print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   ```
 
   
