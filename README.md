@@ -361,7 +361,7 @@ print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
 
   http://blog.naver.com/PostView.nhn?blogId=msyang59&logNo=220627524714
 
-* 두 값 변경(swap
+* 두 값 변경(swap)
 
 ```
 a, b = b, a
@@ -440,6 +440,16 @@ cnt = Counter(colors)
 cnt.most_common()
 # 출력
 # (('blue', 3), ('red', 2), ('green', 1))
+
+# counter객체는 연산 가능
+par = ['leo', 'kiki', 'eden']
+com = ['eden', 'kiki']
+
+# 아래의 경우 출력 Counter({'leo': 1})
+print(Counter(par) - Counter(com))
+
+# 아래의 경우 출력 Counter()
+print(Counter(com) - Counter(par))
 ```
 
 * 반올림
