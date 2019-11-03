@@ -101,14 +101,15 @@
   reversed(list)
   list[::-1]
   
+  ```
 # 특정 기준으로 정렬 할 때 key 사용. sorted도 마찬가지
   list.sort(key = lambda x: x[0])
-  
+
   # 두 가지 기준으로 정렬 할 때, 앞의 것이 우선 기준. sorted도 마찬가지
   list.sort(key = lambda x: (x[0], x[1]))
   # 이 때 x[0]에 의해선 reverse로 x[1]에 의해선 정방향으로 구하고 싶다면
   list.sort(key = lambda x: (x[0], -x[1]), reverse=True)
-  
+
   # 역순으로 배열
   list.sort(key = lambda x: x[0], reverse=True)
   ```
@@ -129,7 +130,7 @@
   ```
 
   
-  
+
 * String, 문자열
 
 * ```python
@@ -143,6 +144,7 @@
   # 앞 글자만 대문자
   s.caplitalize()
   
+  ```
 # 거꾸로
   s[::-1]
   ```
@@ -162,7 +164,7 @@
   ```
 
   
-  
+
 * string에서 ==와 is의 차이
 
 * ```python
@@ -170,7 +172,7 @@
   b = ''.join(["p", "u", "b"])
   
   # a == b일 경우 True. 값을 비교
-  # s is b일 경우 False. 객체 자체를 비교
+  # a is b일 경우 False. 객체 자체를 비교
   ```
 
   
@@ -195,6 +197,8 @@
   	print(i)
   '''
   	
+  ```
+
 i = 0
   while i < 10:
   	if i == 3:
