@@ -101,15 +101,15 @@
   reversed(list)
   list[::-1]
   
-  ```
-# 특정 기준으로 정렬 할 때 key 사용. sorted도 마찬가지
-  list.sort(key = lambda x: x[0])
-
+  # 특정 기준으로 정렬 할 때 key 사용. sorted도 마찬가지
+  list.sort(key=lambda x:x[0])
+  
   # 두 가지 기준으로 정렬 할 때, 앞의 것이 우선 기준. sorted도 마찬가지
   list.sort(key = lambda x: (x[0], x[1]))
+  
   # 이 때 x[0]에 의해선 reverse로 x[1]에 의해선 정방향으로 구하고 싶다면
   list.sort(key = lambda x: (x[0], -x[1]), reverse=True)
-
+  
   # 역순으로 배열
   list.sort(key = lambda x: x[0], reverse=True)
   ```
@@ -118,15 +118,15 @@
 
 * Indexing, 인덱싱
 
-* ```python
-  # arr[A:B:C]의 의미는, index A 부터 index B 까지 C의 간격으로 배열을 만듬
-  [0, 1, 2, 3, 4, 5, 10]
+  ```python
+# arr[A:B:C]의 의미는, index A 부터 index B 까지 C의 간격으로 배열을 만듬
+[0, 1, 2, 3, 4, 5, 10]
   
-  a = "12345"
-  a[::-1]
+a = "12345"
+a[::-1]
   
-  # 출력 결과
-  54321
+# 출력 결과
+54321
   ```
 
   
@@ -144,23 +144,19 @@
   # 앞 글자만 대문자
   s.caplitalize()
   
-  ```
-# 거꾸로
+  # 거꾸로
   s[::-1]
   ```
-  
-  
-  
 * for문, 값과 index 함께 나타내기
 
-* ```python
-  arr = [2, 7, 10]
-  for idx, val in enumerate(arr):
+  ```python
+arr = [2, 7, 10]
+for idx, val in enumerate(arr):
   	print(idx, val)
   	
-  # 만약 enumerate에서 두 번째 인자를 줄 경우, idx는 두 번째 값(여기선 5)부터 시작
-  for idx, val in enumerate(arr, 5):
-  	print(idx, val)
+# 만약 enumerate에서 두 번째 인자를 줄 경우, idx는 두 번째 값(여기선 5)부터 시작
+for idx, val in enumerate(arr, 5):
+  print(idx, val)
   ```
 
   
@@ -361,11 +357,15 @@ print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
 
   http://blog.naver.com/PostView.nhn?blogId=msyang59&logNo=220627524714
 
+  
+
 * 두 값 변경(swap)
 
-```
+```python
 a, b = b, a
 ```
+
+
 
 * class
 
@@ -379,6 +379,8 @@ a = Calculator(3)
 print(a.result)
 # 출력 : 3
 ```
+
+
 
 * 전역 변수
 
@@ -406,6 +408,8 @@ print(a[0])
 # 10 출력
 ```
 
+
+
 * 정수 max, min
 
 ```python
@@ -426,6 +430,8 @@ print(type(t2))
 # <type 'int'>
 # <type 'int'>
 ```
+
+
 
 * 최빈값 구하기
 
@@ -452,6 +458,8 @@ print(Counter(par) - Counter(com))
 print(Counter(com) - Counter(par))
 ```
 
+
+
 * 반올림
 
 ```python
@@ -468,6 +476,8 @@ def round_normal(n):
     return math.floor(n)
   return math.ceil(n)
 ```
+
+
 
 * ASCII
 
