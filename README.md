@@ -446,6 +446,9 @@ cnt = Counter(colors)
 cnt.most_common()
 # 출력
 # (('blue', 3), ('red', 2), ('green', 1))
+# 따라서 아래 가능
+for key, value, in cnt.most_common():
+    print(key, value)
 
 # counter객체는 연산 가능
 par = ['leo', 'kiki', 'eden']
