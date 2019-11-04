@@ -461,6 +461,12 @@ round(3.1415, 2)
 # 사사오입 주의. 반올림할 자리의 수가 5이면 반올림 할 때 앞자리의 숫자가 짝수면 내림하고 홀수면 올림 한다.
 round(4.5)  #결과는 4
 round(3.5)  #결과는 4
+
+# 사사오입 막는 방법
+def round_normal(n):
+  if n - math.floor(n) < 0.5:
+    return math.floor(n)
+  return math.ceil(n)
 ```
 
 * ASCII
