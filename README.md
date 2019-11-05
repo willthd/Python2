@@ -270,9 +270,11 @@ print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   ```python
   # 스택
   stack = []
+  # 마지막에 삽입
   stack.append(1)
   stack.append(2)
   stack.append(3)
+  # 마지막에 pop
   stack.pop() # 3
   stack.pop() # 2
   stack.pop() # 1 
@@ -290,11 +292,17 @@ print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   # 큐, 덱을 이용함, 큐의 경우 앞으로 한칸 씩 값을 옮겨야 하기 때문에 시간 복잡도 O(n)되기 때문
   # (deque는 double ended queue의 약자)
   from collections import deque
-  queue = deque()
-  queue.append(1)
-  queue.append(2)
-  queue.popleft() # 1
-  queue.popleft() # 2
+  dq = deque()
+  # 마지막에 삽입
+  dq.append(1)
+  dq.append(2)
+  # 처음에 삽입
+  dq.appendleft(4)
+  # 마지막에 pop
+  dq.pop() # 1
+  # 처음에 pop
+  dq.popleft() # 4
+  dq.popleft() # 2
   
   # list를 deque로 변환
   dq = Deque(list_)
