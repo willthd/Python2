@@ -498,3 +498,14 @@ ord('A')
 # 65
 ```
 
+
+
+* 2차원 배열
+
+```python
+# n by m array
+dp = [[0]*m for i in range(n)]
+```
+
+</br>
+
