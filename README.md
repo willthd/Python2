@@ -509,3 +509,15 @@ dp = [[0]*m for i in range(n)]
 
 </br>
 
+* 문자열에서 숫자만 추출
+
+```python
+import re
+
+s = 'dsfads123dsd12d 3 ds1'
+
+# 결과 : ['123', '12', '3', '1']
+print(re.findall('\d+', s))
+```
+
+</br>
