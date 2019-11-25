@@ -147,6 +147,9 @@ a[::-1]
   # 거꾸로
   s[::-1]
   ```
+
+
+
 * for문, 값과 index 함께 나타내기
 
   ```python
@@ -239,7 +242,8 @@ print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   print(a[0])
   ```
 
-  
+
+
 
 * 소수점
 
@@ -451,12 +455,20 @@ cnt = Counter(colors)
 # cnt 출력
 # Counter({'blue': 3, 'red': 2, 'green': 1})
 
+cnt.keys()
+# 출력 : dict_keys(['red', 'blue', 'green']). 접근하려면 list()한다음 접근
+
+cnt.values()
+# 출력 : dict_values([2, 3, 1])
+
 cnt.most_common()
-# 출력
-# (('blue', 3), ('red', 2), ('green', 1))
+# 출력 : (('blue', 3), ('red', 2), ('green', 1))
 # 따라서 아래 가능
 for key, value, in cnt.most_common():
     print(key, value)
+    
+cnt.items()
+# 출력 : dict_items([('red', 2), ('blue', 3), ('green', 1)])
 
 # counter객체는 연산 가능
 par = ['leo', 'kiki', 'eden']
