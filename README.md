@@ -344,6 +344,7 @@ print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   persons = [('김기수', 30), ('홍대길', 35), ('강찬수', 25)]
   mydict = dict(persons)
    
+  # mydict.get('홍대길')과 동일, mydict.get('홍대길', '?') : '홍대길' 없으면 ? return함
   age = mydict["홍대길"]
   print(age)   # 35
    
