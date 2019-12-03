@@ -146,6 +146,22 @@ a[::-1]
   
   # 거꾸로
   s[::-1]
+  
+  # list와 string
+  char = list('hello')
+  char
+  # 출력 : ['h', 'e', 'l', 'l', 'o']
+  
+  # string to list
+  words = "python은 프로그래밍을 배우기에 아주 좋은 언어입니다."
+  words_list = words.split()
+  words_list
+  # 출력 : ['python은', '프로그래밍을', '배우기에', '아주', '좋은', '언어입니다.']
+  
+  # list to string
+  time_list = ['10', '34', '17']
+  ':'.join(time_list)
+  # 출력 : '10:34:17'
   ```
 
 
