@@ -203,6 +203,10 @@ for idx, val in enumerate(arr, 5):
         i += 1
     	print(i)
     	i += 1	# 꼭 추가
+      
+      
+  # list 내부에서 for문 활용하기
+  modified_numbers = [0 if number % 2 == 0 else 1 if number % 3 == 0 else number for number in numbers]
   ```
   
   
