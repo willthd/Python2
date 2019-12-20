@@ -119,12 +119,14 @@
 * Indexing, 인덱싱
 
   ```python
+  
+  ```
 # arr[A:B:C]의 의미는, index A 부터 index B 까지 C의 간격으로 배열을 만듬
 [0, 1, 2, 3, 4, 5, 10]
-  
+
 a = "12345"
 a[::-1]
-  
+
 # 출력 결과
 54321
   ```
@@ -173,6 +175,7 @@ arr = [2, 7, 10]
 for idx, val in enumerate(arr):
   	print(idx, val)
   	
+  ```
 # 만약 enumerate에서 두 번째 인자를 줄 경우, idx는 두 번째 값(여기선 5)부터 시작
 for idx, val in enumerate(arr, 5):
   print(idx, val)
@@ -191,7 +194,7 @@ for idx, val in enumerate(arr, 5):
   ```
 
   
-  
+
 * for문, 반복문
 
 * ```python
@@ -230,6 +233,8 @@ for idx, val in enumerate(arr, 5):
 * format
 
   ```python
+  
+  ```
 # format
 print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   ```
@@ -554,3 +559,21 @@ print(re.findall('\d+', s))
 ```
 
 </br>
+
+* generator
+
+```python
+def square_numbers(nums):
+    for i in nums:
+        yield i * i
+
+my_nums = square_numbers([1, 2, 3, 4, 5])
+
+for num in my_nums:
+    print num
+```
+
+generator는 모든 결과 값을 메모리에 저장하지 않기 때문에 더 좋은 퍼포먼스를 냄
+
+</br>
+
