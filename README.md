@@ -26,7 +26,8 @@
   # 방법 1이 더 빠름
   ```
 
-  
+
+</br>
 
 * 출력
 
@@ -38,7 +39,8 @@
   print("adslkfjl", end='')
   ```
 
-  
+
+</br>
 
 * map
 
@@ -53,7 +55,8 @@
   # [1, 4, 9, 16, 25]
   ```
 
-  
+
+</br>
 
 * filter
 
@@ -67,7 +70,8 @@
   # [1, 3, 5]
   ```
 
-  
+
+</br>
 
 * reduce
 
@@ -83,7 +87,8 @@
   # 5050
   ```
 
-  
+
+</br>
 
 * sort
 
@@ -114,7 +119,7 @@
   list.sort(key = lambda x: x[0], reverse=True)
   ```
 
-
+</br>
 
 * Indexing, 인덱싱
 
@@ -126,42 +131,42 @@
   # 54321
   ```
 
-
+</br>
 
 * String, 문자열
 
   ```python
-# 아래 경우 모두 s 원본 변경 x. return 값만 변경
-# 대문자 
-s.upper()
-
-# 소문자
-s.lower()
-
-# 앞 글자만 대문자
-s.caplitalize()
-
-# 거꾸로
-s[::-1]
-
-# list와 string
-char = list('hello')
-char
-# 출력 : ['h', 'e', 'l', 'l', 'o']
-
-# string to list
-words = "python은 프로그래밍을 배우기에 아주 좋은 언어입니다."
-words_list = words.split()
-words_list
-# 출력 : ['python은', '프로그래밍을', '배우기에', '아주', '좋은', '언어입니다.']
-
-# list to string
-time_list = ['10', '34', '17']
-':'.join(time_list)
-# 출력 : '10:34:17'
+  # 아래 경우 모두 s 원본 변경 x. return 값만 변경
+  # 대문자 
+  s.upper()
+  
+  # 소문자
+  s.lower()
+  
+  # 앞 글자만 대문자
+  s.caplitalize()
+  
+  # 거꾸로
+  s[::-1]
+  
+  # list와 string
+  char = list('hello')
+  char
+  # 출력 : ['h', 'e', 'l', 'l', 'o']
+  
+  # string to list
+  words = "python은 프로그래밍을 배우기에 아주 좋은 언어입니다."
+  words_list = words.split()
+  words_list
+  # 출력 : ['python은', '프로그래밍을', '배우기에', '아주', '좋은', '언어입니다.']
+  
+  # list to string
+  time_list = ['10', '34', '17']
+  ':'.join(time_list)
+  # 출력 : '10:34:17'
   ```
 
-
+</br>
 
 * for문, 값과 index 함께 나타내기
 
@@ -175,19 +180,19 @@ for idx, val in enumerate(arr):
     print(idx, val)
   ```
 
-
+</br>
 
 * string에서 ==와 is의 차이
 
   ```python
-a = "pub"
-b = ''.join(["p", "u", "b"])
-
-# a == b일 경우 True. 값을 비교
-# a is b일 경우 False. 객체 자체를 비교
+  a = "pub"
+  b = ''.join(["p", "u", "b"])
+  
+  # a == b일 경우 True. 값을 비교
+  # a is b일 경우 False. 객체 자체를 비교
   ```
 
-  
+ </br> 
 
 * for문, 반복문
 
@@ -222,7 +227,8 @@ b = ''.join(["p", "u", "b"])
   modified_numbers = [0 if number % 2 == 0 else 1 if number % 3 == 0 else number for number in numbers]
   ```
 
-  
+
+</br>
 
 * format
 
@@ -232,36 +238,36 @@ b = ''.join(["p", "u", "b"])
   print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   ```
 
-
+</br>
 
 * List
 
   ```python
-# 사이즈 1000인 리스트 선언
-a = [0] * 1000
-
-# 값의 index 찾기
-a.index(값)
-
-# list의 경우 비어있으면 if문에서 false로 사용
-# list.isempty()는 not list와 동일
-if not seq:
-if seq:
-
-# list 읽을 때 주의
-# 1은 안되고, 2는 됨
-# 1
-a = []
-a[0] = 1
-print(a[0])
-
-# 2
-a = []
-a.append(1)
-print(a[0])
+  # 사이즈 1000인 리스트 선언
+  a = [0] * 1000
+  
+  # 값의 index 찾기
+  a.index(값)
+  
+  # list의 경우 비어있으면 if문에서 false로 사용
+  # list.isempty()는 not list와 동일
+  if not seq:
+  if seq:
+  
+  # list 읽을 때 주의
+  # 1은 안되고, 2는 됨
+  # 1
+  a = []
+  a[0] = 1
+  print(a[0])
+  
+  # 2
+  a = []
+  a.append(1)
+  print(a[0])
   ```
 
-
+</br>
 
 
 * 소수점
@@ -274,7 +280,9 @@ print(a[0])
   "%0.4f" % 3.42134234
   ```
 
-  
+
+</br>
+
 
 * 몫, 나머지
 
@@ -286,7 +294,7 @@ print(a[0])
   5%3
   ```
 
-
+</br>
 
 * stack, queue, deque
 
@@ -331,7 +339,7 @@ print(a[0])
   dq = Deque(list_)
   ```
 
-
+</br>
 
 * Dictionary
 
@@ -389,7 +397,8 @@ print(a[0])
 
   http://blog.naver.com/PostView.nhn?blogId=msyang59&logNo=220627524714
 
-  
+
+</br>
 
 * 두 값 변경(swap)
 
@@ -397,7 +406,7 @@ print(a[0])
 a, b = b, a
 ```
 
-
+</br>
 
 * class
 
@@ -412,7 +421,7 @@ print(a.result)
 # 출력 : 3
 ```
 
-
+</br>
 
 * 전역 변수
 
@@ -440,7 +449,7 @@ print(a[0])
 # 10 출력
 ```
 
-
+</br>
 
 * 정수 max, min
 
@@ -463,7 +472,7 @@ print(type(t2))
 # <type 'int'>
 ```
 
-
+</br>
 
 * 최빈값 구하기
 
@@ -501,7 +510,7 @@ print(Counter(par) - Counter(com))
 print(Counter(com) - Counter(par))
 ```
 
-
+</br>
 
 * 반올림
 
@@ -520,7 +529,7 @@ def round_normal(n):
   return math.ceil(n)
 ```
 
-
+</br>
 
 * ASCII
 
@@ -530,7 +539,7 @@ ord('A')
 # 65
 ```
 
-
+</br>
 
 * 2차원 배열
 
@@ -539,7 +548,7 @@ ord('A')
 dp = [[0]*m for i in range(n)]
 ```
 
-
+</br>
 
 * 문자열에서 숫자만 추출
 
@@ -570,4 +579,24 @@ for num in my_nums:
 generator는 모든 결과 값을 메모리에 저장하지 않기 때문에 더 좋은 퍼포먼스를 냄
 
 </br>
+
+* 이진수 변환
+
+```python
+# 이진수
+num = 49
+
+# 십진수 -> others
+# 각 변환 값은 str 형태
+bin(num)
+oct(num)
+hex(num)
+
+# others -> 십진수
+int('0b101010', 2)
+int('0o52', 8)
+int('0x2a', 16)
+```
+
+
 
