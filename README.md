@@ -170,9 +170,11 @@
 
 * for문, 값과 index 함께 나타내기
 
-  ```python
-arr = [2, 7, 10]
-for idx, val in enumerate(arr):
+  
+
+```python
+  arr = [2, 7, 10]
+  for idx, val in enumerate(arr):
   	print(idx, val)
   	
   # 만약 enumerate에서 두 번째 인자를 줄 경우, idx는 두 번째 값(여기선 5)부터 시작
@@ -183,6 +185,8 @@ for idx, val in enumerate(arr):
 </br>
 
 * string에서 ==와 is의 차이
+
+  
 
   ```python
   a = "pub"
