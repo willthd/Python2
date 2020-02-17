@@ -591,16 +591,22 @@ generator는 모든 결과 값을 메모리에 저장하지 않기 때문에 더
 num = 49
 
 # 십진수 -> others
-# 각 변환 값은 str 형태
+# 각 변환 값은 str 형태, 접두어 주의
 bin(num)
+# '0b101010'
 oct(num)
 hex(num)
+
+# 접두어 없이 가능
+format(42, 'b')
+# '101010'
+format(42, 'o')
+# '52'
+format(42, 'x')
+# '2a'
 
 # others -> 십진수
 int('0b101010', 2)
 int('0o52', 8)
 int('0x2a', 16)
 ```
-
-
-
