@@ -30,7 +30,7 @@
 
 * 출력
 
-* ```python
+  ```python
   # java에서 System.out.println()과 동일
   print("adslkfjl")
   
@@ -39,7 +39,7 @@
   ```
 
   
-  
+
 * map
 
   list의 각 element에 함수를 적용시켜 결과를 반환
@@ -87,7 +87,7 @@
 
 * sort
 
-* ```python
+  ```python
   # 숫자는 오름차순, 문자는 알파벳순으로 정렬. 원본 정렬되어 변환
   list.sort()
   
@@ -119,51 +119,46 @@
 * Indexing, 인덱싱
 
   ```python
+  a = "12345"
+  a[::-1]
   
-  ```
-# arr[A:B:C]의 의미는, index A 부터 index B 까지 C의 간격으로 배열을 만듬
-[0, 1, 2, 3, 4, 5, 10]
-
-a = "12345"
-a[::-1]
-
-# 출력 결과
-54321
+  # 출력 결과
+  # 54321
   ```
 
-  
+
 
 * String, 문자열
 
-* ```python
-  # 아래 경우 모두 s 원본 변경 x. return 값만 변경
-  # 대문자 
-  s.upper()
-  
-  # 소문자
-  s.lower()
-  
-  # 앞 글자만 대문자
-  s.caplitalize()
-  
-  # 거꾸로
-  s[::-1]
-  
-  # list와 string
-  char = list('hello')
-  char
-  # 출력 : ['h', 'e', 'l', 'l', 'o']
-  
-  # string to list
-  words = "python은 프로그래밍을 배우기에 아주 좋은 언어입니다."
-  words_list = words.split()
-  words_list
-  # 출력 : ['python은', '프로그래밍을', '배우기에', '아주', '좋은', '언어입니다.']
-  
-  # list to string
-  time_list = ['10', '34', '17']
-  ':'.join(time_list)
-  # 출력 : '10:34:17'
+  ```python
+# 아래 경우 모두 s 원본 변경 x. return 값만 변경
+# 대문자 
+s.upper()
+
+# 소문자
+s.lower()
+
+# 앞 글자만 대문자
+s.caplitalize()
+
+# 거꾸로
+s[::-1]
+
+# list와 string
+char = list('hello')
+char
+# 출력 : ['h', 'e', 'l', 'l', 'o']
+
+# string to list
+words = "python은 프로그래밍을 배우기에 아주 좋은 언어입니다."
+words_list = words.split()
+words_list
+# 출력 : ['python은', '프로그래밍을', '배우기에', '아주', '좋은', '언어입니다.']
+
+# list to string
+time_list = ['10', '34', '17']
+':'.join(time_list)
+# 출력 : '10:34:17'
   ```
 
 
@@ -175,29 +170,28 @@ arr = [2, 7, 10]
 for idx, val in enumerate(arr):
   	print(idx, val)
   	
-  ```
-# 만약 enumerate에서 두 번째 인자를 줄 경우, idx는 두 번째 값(여기선 5)부터 시작
-for idx, val in enumerate(arr, 5):
-  print(idx, val)
+  # 만약 enumerate에서 두 번째 인자를 줄 경우, idx는 두 번째 값(여기선 5)부터 시작
+  for idx, val in enumerate(arr, 5):
+    print(idx, val)
   ```
 
-  
+
 
 * string에서 ==와 is의 차이
 
-* ```python
-  a = "pub"
-  b = ''.join(["p", "u", "b"])
-  
-  # a == b일 경우 True. 값을 비교
-  # a is b일 경우 False. 객체 자체를 비교
+  ```python
+a = "pub"
+b = ''.join(["p", "u", "b"])
+
+# a == b일 경우 True. 값을 비교
+# a is b일 경우 False. 객체 자체를 비교
   ```
 
   
 
 * for문, 반복문
 
-* ```python
+  ```python
   for i in range(10, 7, -1):
   	print(i)
   	
@@ -227,44 +221,44 @@ for idx, val in enumerate(arr, 5):
   # list 내부에서 for문 활용하기
   modified_numbers = [0 if number % 2 == 0 else 1 if number % 3 == 0 else number for number in numbers]
   ```
-  
+
   
 
 * format
 
   ```python
+  # format
   
+  print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   ```
-# format
-print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
-  ```
 
-  
 
-* list
 
-* ```python
-  # 사이즈 1000인 리스트 선언
-  a = [0] * 1000
-  
-  # 값의 index 찾기
-  a.index(값)
-  
-  # list의 경우 비어있으면 if문에서 false로 사용
-  # list.isempty()는 not list와 동일
-  if not seq:
-  if seq:
-    
-  # list 읽을 때 주의
-  # 1은 안됨
-  a = []
-  a[0] = 1
-  print(a[0])
-  
-  # 2는 됨
-  a = []
-  a.append(1)
-  print(a[0])
+* List
+
+  ```python
+# 사이즈 1000인 리스트 선언
+a = [0] * 1000
+
+# 값의 index 찾기
+a.index(값)
+
+# list의 경우 비어있으면 if문에서 false로 사용
+# list.isempty()는 not list와 동일
+if not seq:
+if seq:
+
+# list 읽을 때 주의
+# 1은 안되고, 2는 됨
+# 1
+a = []
+a[0] = 1
+print(a[0])
+
+# 2
+a = []
+a.append(1)
+print(a[0])
   ```
 
 
@@ -349,7 +343,7 @@ print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   persons = [('김기수', 30), ('홍대길', 35), ('강찬수', 25)]
   mydict = dict(persons)
    
-  # mydict.get('홍대길')과 동일, mydict.get('홍대길', '?') : '홍대길' 없으면 ? return함
+  # mydict.get('홍대길')과 동일, mydict.get('홍대성') : '홍대성' 없으면 None return함
   age = mydict["홍대길"]
   print(age)   # 35
    
@@ -374,7 +368,7 @@ print('Case #{}: {} + {} = {}'.format(t+1, A, B, A+B))
   v = scores["민수"]
   
   # 7. sort
-  # 파이썬의 사전은 key : value 쌍으로 값이 들어 있으며, 이를 정렬(sort)하면 기본으로 키(key)을 기준으로 올림 차순으로 정렬
+  # 파이썬의 사전은 key : value 쌍으로 값이 들어 있으며, 이를 정렬(sort)하면 기본으로 키(key)을 기준으로 오름차순으로 정렬
   fruits = { 'apple': 2, 'banana' : 1, 'melon' : 0, 'pear' : 2, 'plum' : 1}
   sorted(fruits)
   # 결과 : ['apple', 'banana', 'melon', 'pear', 'plum']
@@ -545,7 +539,7 @@ ord('A')
 dp = [[0]*m for i in range(n)]
 ```
 
-</br>
+
 
 * 문자열에서 숫자만 추출
 
