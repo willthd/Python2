@@ -180,7 +180,7 @@
   # 만약 enumerate에서 두 번째 인자를 줄 경우, idx는 두 번째 값(여기선 5)부터 시작
   for idx, val in enumerate(arr, 5):
     print(idx, val)
-  ```
+```
 
 </br>
 
@@ -610,3 +610,25 @@ int('0b101010', 2)
 int('0o52', 8)
 int('0x2a', 16)
 ```
+
+</br>
+
+* comparator
+
+```python
+# [프로그래머스, 정렬, 가장 큰 수]
+# cmp_to_key를 이용해 정렬 시, comparator 함수 반영 할 수 있음
+from functools import cmp_to_key
+
+def compare(a,b):
+    n1 = a + b
+    n2 = b + a
+    return int(n2) - int(n1)
+
+def solution(numbers):
+    str_numbers = [str(x) for x in numbers]
+    str_numbers.sort(key=cmp_to_key(compare))
+    answer = str(int(''.join(str_numbers)))
+    return answer
+```
+
