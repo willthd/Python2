@@ -647,7 +647,6 @@ c = combinations(chars, 2)  # 조합
 
 print(list(p))
 print(list(c))
-
 # 출력 결과
 # [('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'C'), ('C', 'A'), ('C', 'B')]
 # [('A', 'B'), ('A', 'C'), ('B', 'C')]
