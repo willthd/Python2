@@ -632,3 +632,24 @@ def solution(numbers):
     return answer
 ```
 
+</br>
+
+* 순열과 조합
+
+```python
+from itertools import permutations, combinations
+
+chars = ['A', 'B', 'C']
+
+# 두 번째 파라미터는 nP2, nC2에서 2를 의미
+p = permutations(chars, 2)  # 순열
+c = combinations(chars, 2)  # 조합
+
+print(list(p))
+print(list(c))
+
+# 출력 결과
+# [('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'C'), ('C', 'A'), ('C', 'B')]
+# [('A', 'B'), ('A', 'C'), ('B', 'C')]
+```
+
